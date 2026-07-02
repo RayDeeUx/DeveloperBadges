@@ -1,3 +1,5 @@
+// this source file is unused, see DeveloperBadges.cpp for all badge info
+/*
 #include "../DeveloperBadges.hpp"
 #include <Geode/binding/GJUserScore.hpp>
 #include <Geode/modify/ProfilePage.hpp>
@@ -41,3 +43,4 @@ class $modify(DBProfilePage, ProfilePage) {
         DeveloperBadges::showBadgeInfo(m_fields->m_badgeName, sender->getTag());
     }
 };
+*/

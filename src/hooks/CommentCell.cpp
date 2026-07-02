@@ -1,3 +1,5 @@
+// this source file is unused, see DeveloperBadges.cpp for all badge info
+/*
 #include "../DeveloperBadges.hpp"
 #include <Geode/binding/GameLevelManager.hpp>
 #include <Geode/binding/GJComment.hpp>
@@ -71,3 +73,4 @@ class $modify(DBCommentCell, CommentCell) {
         DeveloperBadges::showBadgeInfo(m_fields->m_badgeName, sender->getTag());
     }
 };
+*/
