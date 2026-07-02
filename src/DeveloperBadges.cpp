@@ -105,7 +105,7 @@ $on_mod(Loaded) {
         "They have created mods that are available on the <cy>Geode mod index</c>.\n\n"
         "They will have to have new mods and mod updates approved by the <cd>index staff</c>",
         [] (const alpha::badgify::Badge& badgeFromAlpha) {
-            DeveloperBadge* badge = DeveloperBadges::badgeForUser(badge.user.data()->m_accountID);
+            DeveloperBadge* badge = DeveloperBadges::badgeForUser(badgeFromAlpha.user.data()->m_accountID);
             if (!badge || badge->type != 1) return;
 
             CCSprite* badgeButton = CCSprite::createWithSpriteFrameName("badge01.png"_spr);
@@ -131,7 +131,7 @@ $on_mod(Loaded) {
         "They can update their mods on the <cy>Geode mod index</c> without the need for approval.\n\n"
         "They will still have to have new mods approved by the <cd>index staff</c>",
         [] (const alpha::badgify::Badge& badgeFromAlpha) {
-            DeveloperBadge* badge = DeveloperBadges::badgeForUser(badge.user.data()->m_accountID);
+            DeveloperBadge* badge = DeveloperBadges::badgeForUser(badgeFromAlpha.user.data()->m_accountID);
             if (!badge || badge->type != 2) return;
 
             CCSprite* badgeButton = CCSprite::createWithSpriteFrameName("badge02.png"_spr);
@@ -156,7 +156,7 @@ $on_mod(Loaded) {
         "This user is a member of the <cd>index staff</c> for <cy>Geode</c>.\n\n"
         "They can approve or reject mods uploaded to the <cy>Geode mod index</c>.",
         [] (const alpha::badgify::Badge& badgeFromAlpha) {
-            DeveloperBadge* badge = DeveloperBadges::badgeForUser(badge.user.data()->m_accountID);
+            DeveloperBadge* badge = DeveloperBadges::badgeForUser(badgeFromAlpha.user.data()->m_accountID);
             if (!badge || badge->type != 3) return;
 
             CCSprite* badgeButton = CCSprite::createWithSpriteFrameName("badge03.png"_spr);
@@ -180,7 +180,7 @@ $on_mod(Loaded) {
         "This user is a <co>lead developer</c> of <cy>Geode</c>.\n\n"
         "They are part of the main development team and have significant contributions to the <cy>Geode ecosystem</c>.",
         [] (const alpha::badgify::Badge& badgeFromAlpha) {
-            DeveloperBadge* badge = DeveloperBadges::badgeForUser(badge.user.data()->m_accountID);
+            DeveloperBadge* badge = DeveloperBadges::badgeForUser(badgeFromAlpha.user.data()->m_accountID);
             if (!badge || badge->type != 4) return;
 
             CCSprite* badgeButton = CCSprite::createWithSpriteFrameName("badge04.png"_spr);
